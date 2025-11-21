@@ -15,45 +15,14 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-   <style>
-    :root {
-      --primary: #0A1D56;
-      --secondary: #3FA9F5;
-      --accent: #F8C02C;
-      --background: #FFFFFF;
-      --dark: #333333;
-      --muted: #666666;
-      --light-blue: #E8F3FF;
-    }
+  <style>
+  .animate-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+</style>
 
-    body {
-      font-family: 'Open Sans', sans-serif;
-      color: var(--dark);
-      background: var(--background);
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    h2, h3 {
-      font-family: 'Poppins', sans-serif;
-      color: var(--primary);
-    }
-
-    h1{
-        color: var(--light-blue)
-    }
-
-    .section {
-      padding: 80px 20px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  </style>
+   
   </head>
 
 <body>
@@ -82,100 +51,242 @@
     </div>
   </header>
 <!-- about.html main content -->
-<main class="about-page">
+<main class="about-page modern-about">
 
-  <!-- Hero Section -->
-  <section class="about-hero section">
+  <!-- HERO -->
+  <section class="about-hero bg-gradient">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1 class="hero-title">We turn confusion into clarity — one concept at a time.</h1>
+        <p class="hero-lead">
+          Core Concepts Academy is a bold new kind of tutoring studio built for ambitious students who want to *understand*, not memorize.
+          We combine research-driven pedagogy, active problem solving and technology to make hard topics easy to master.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="courses.html">Explore Courses</a>
+          <a class="btn btn-outline" href="register.html">Register Now</a>
+        </div>
+
+        <ul class="hero-highlights">
+          <li><strong>Personalized lessons</strong> with clear roadmaps</li>
+          <li><strong>Proven methods</strong> — worked examples & exam strategies</li>
+          <li><strong>Flexible schedules</strong> for 100L university students</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <img src="assets/images/classroom.jpeg" alt="Students learning" class="hero-image">
+          <div class="hero-card-overlay">
+            <p class="small">Join a cohort — seats limited</p>
+            <div class="stat-row">
+              <div class="stat">
+                <span class="counter" data-target="1200">0</span>
+                <small>Students helped</small>
+              </div>
+              <div class="stat">
+                <span class="counter" data-target="95">0</span>
+                <small>% pass rate</small>
+              </div>
+              <div class="stat">
+                <span class="counter" data-target="8">0</span>
+                <small>Years teaching</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE (long, visionary) -->
+  <section class="who-we-are section">
     <div class="container">
-      <h1 class="animate-slide-up">About Core Concepts Academy</h1>
-      <p class="animate-fade-in">
-        At Core Concepts Academy, we believe that true understanding goes beyond memorization.
-        Our goal is to make learning deep, simple, and engaging for every student.
+      <h2 class="section-title">Who we are</h2>
+      <p class="lead">
+        Core Concepts Academy began with a simple but powerful idea: *students don’t fail because they are weak — they fail because the way topics are taught is disconnected from how students learn.*  
+        Founded by Nnachi Kosisochukwu Daniel, the Academy grew from a series of one-on-one sessions into a structured program that blends clarity, depth and pace. We believe learning should be active, not passive — that’s why our lessons emphasise core principles first, then scaffold problem practice until mastery.
       </p>
-    </div>
-  </section>
 
-  <!-- Story Section -->
-  <section class="about-story section container">
-    <div class="about-grid">
-      <div class="about-text animate-slide-left">
-        <h2>Our Story</h2>
-        <p>
-          Core Concepts Academy started as a passion project — a desire to help students truly
-          understand science and mathematics rather than cram them. Over time, it has grown into
-          a trusted online tutoring platform where clarity meets simplicity.
-        </p>
-        <p>
-          We’ve worked with students across Nigeria and beyond, focusing on simplifying complex ideas
-          using relatable examples, modern teaching methods, and personalized feedback.
-        </p>
-      </div>
+      <p class="story">
+        Over the years we’ve helped hundreds of first-year university students reclaim their confidence: turning fear into curiosity and confusion into capability. Our teaching is informed by classroom experience and practical exam preparation — we break big ideas down into digestible parts, show immediate applications, and design practice that results in real improvements in test performance.  
+        We care about outcomes: faster understanding, consistent improvement, and long-term conceptual retention. From our early days tutoring neighbours to supporting entire cohorts remotely, our mission has remained constant: *teach the core — everything else follows*.
+      </p>
 
-      <div class="about-image animate-zoom-in">
-        <img src="assets/images/classroom.jpeg" alt="Students learning in class">
+      <div class="quote-card">
+        <blockquote>
+          “We don’t teach tricks. We teach the logic. Once the logic is clear, students begin to think for themselves.”  
+        </blockquote>
+        <cite>— N. K. Daniel, Founder</cite>
       </div>
     </div>
   </section>
 
-  <!-- Mission and Vision -->
-  <section class="about-values section">
+  <!-- MISSION / VISION -->
+  <section class="mission-vision section bg-soft">
+    <div class="container grid-2">
+      <div class="card animate-in">
+        <h3>Our Mission</h3>
+        <p>
+          To make difficult topics accessible through sharp explanations, deliberate practice and mentorship — empowering 100L students to build a solid academic foundation.
+        </p>
+      </div>
+
+      <div class="card animate-in" style="--delay:0.15s">
+        <h3>Our Vision</h3>
+        <p>
+          To become the go-to academic growth partner across West Africa — where students move from confusion to clarity, and do so with confidence and speed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING PHILOSOPHY -->
+  <section class="teaching-philosophy section">
     <div class="container">
-      <h2 class="animate-slide-up">Our Mission & Vision</h2>
-      <div class="values-grid">
-        <div class="value-card animate-fade-in">
-          <h3>🎯 Mission</h3>
-          <p>
-            To help every learner understand the core principles behind what they study,
-            building confidence and competence through practical, relatable teaching.
-          </p>
+      <h2 class="section-title">Our Teaching Philosophy</h2>
+
+      <div class="philosophy-grid">
+        <div class="philo-card animate-in">
+          <h4>Concept First</h4>
+          <p>We explain the core idea before we practice. Understanding the 'why' makes the 'how' intuitive.</p>
         </div>
 
-        <div class="value-card animate-fade-in" style="--delay:0.2s;">
-          <h3>🚀 Vision</h3>
-          <p>
-            To become a leading academic support platform in Africa — nurturing smart, confident,
-            and independent thinkers ready to shape the future.
-          </p>
+        <div class="philo-card animate-in" style="--delay:0.12s">
+          <h4>Active Problem Solving</h4>
+          <p>Students solve progressively harder problems under guidance — retention grows with deliberate practice.</p>
+        </div>
+
+        <div class="philo-card animate-in" style="--delay:0.24s">
+          <h4>Exam Alignment</h4>
+          <p>We teach the techniques that work in exams: structured answers, time-saving shortcuts, and common pitfalls to avoid.</p>
+        </div>
+
+        <div class="philo-card animate-in" style="--delay:0.36s">
+          <h4>Feedback Loop</h4>
+          <p>Short, focused feedback that helps students iterate and get better week-by-week.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Teaching Approach -->
-  <section class="about-approach section container">
-    <h2 class="animate-slide-up">Our Approach to Learning</h2>
-    <ul class="approach-list">
-      <li class="animate-slide-left">Simplify complex concepts into understandable parts.</li>
-      <li class="animate-slide-left" style="--delay:0.2s;">Use real-life examples to build connection and interest.</li>
-      <li class="animate-slide-left" style="--delay:0.4s;">Encourage interaction and self-discovery through questions.</li>
-      <li class="animate-slide-left" style="--delay:0.6s;">Track progress and adapt sessions to student pace.</li>
-    </ul>
-  </section>
-
-  <!-- Founder Section -->
-  <section class="founder-section section">
-    <div class="container founder-grid">
-      <div class="founder-img animate-zoom-in">
-        <img src="assets/images/dp.png" alt="Founder of Core Concepts Academy">
+  <!-- NUMBERS & TRUST -->
+  <section class="numbers section bg-gradient-soft">
+    <div class="container numbers-inner">
+      <div class="numbers-left">
+        <h3>Why students choose us</h3>
+        <p>We blend measurable results with approachable teaching. Our students consistently see faster progress and stronger exam performance.</p>
+        <ul class="reasons">
+          <li>Personalized pacing</li>
+          <li>Clear lesson maps</li>
+          <li>Recorded sessions for review</li>
+          <li>Practical exam practice</li>
+        </ul>
       </div>
 
-      <div class="founder-text animate-slide-right">
-        <h2>Meet the Founder</h2>
+      <div class="numbers-right">
+        <div class="stat-big">
+          <span class="counter" data-target="1200">0</span>
+          <small>students helped</small>
+        </div>
+        <div class="stat-grid">
+          <div class="mini-stat">
+            <span class="counter" data-target="95">0</span>
+            <small>% pass rate</small>
+          </div>
+          <div class="mini-stat">
+            <span class="counter" data-target="8">0</span>
+            <small>years teaching</small>
+          </div>
+          <div class="mini-stat">
+            <span class="counter" data-target="3">0</span>
+            <small>core courses</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE / HOW WE STARTED -->
+  <section class="timeline section">
+    <div class="container">
+      <h2 class="section-title">How we started</h2>
+      <div class="timeline-grid">
+        <div class="timeline-item animate-in">
+          <span class="year">2017</span>
+          <h4>First tutoring sessions</h4>
+          <p>Small groups, one-on-one explanations — the seed for a better way to teach.</p>
+        </div>
+
+        <div class="timeline-item animate-in" style="--delay:0.12s">
+          <span class="year">2019</span>
+          <h4>Structured curriculum</h4>
+          <p>Lessons were formalized into modules, with problem sets and progress checks.</p>
+        </div>
+
+        <div class="timeline-item animate-in" style="--delay:0.24s">
+          <span class="year">2022</span>
+          <h4>Online expansion</h4>
+          <p>We took the curriculum online — reaching students across states with recorded sessions.</p>
+        </div>
+
+        <div class="timeline-item animate-in" style="--delay:0.36s">
+          <span class="year">2025</span>
+          <h4>Growing community</h4>
+          <p>Hundreds of students and a stronger outcomes-driven approach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER (visionary tone) -->
+  <section class="founder section bg-soft">
+    <div class="container founder-inner">
+      <div class="founder-media animate-in">
+        <div class="founder-photo">
+          <img src="assets/images/dp.png" alt="Nnachi Kosisochukwu Daniel">
+        </div>
+      </div>
+
+      <div class="founder-bio animate-in" style="--delay:0.12s">
+        <h2>Meet the founder</h2>
         <h3>Nnachi Kosisochukwu Daniel</h3>
-        <p>
-          Nnachi Daniel is the visionary behind Core Concepts Academy — a passionate tutor and Computer Science graduate
-          from the University of Nigeria, Nsukka. His goal has always been simple: to make learning science concepts clear,
-          enjoyable, and accessible to every student.
+        <p class="founder-lead">
+          A visionary tutor and tech-minded educator, Nnachi believes that strong fundamentals and digital tools can transform learning across Africa.
         </p>
+
         <p>
-          Beyond teaching, he loves mentoring young learners, exploring technology, and developing digital tools that make
-          education easier. Under his leadership, Core Concepts Academy continues to grow as a trusted name in quality tutoring.
+          Nnachi graduated in Computer Science from the University of Nigeria, Nsukka and began teaching because he saw how capable students struggled with presentation and structure — not intelligence.
+          He builds lessons that prioritize reasoning, context and exam-readiness. Beyond tutoring, he builds digital tools to help students review faster, track progress, and practice with purpose.
         </p>
+
+        <p>
+          Under his leadership the Academy focuses on outcomes: clear concept maps, measurable progress, and a culture of curiosity.
+        </p>
+
+        <div class="founder-cta">
+          <a href="register.html" class="btn btn-primary">Register for a session</a>
+          <a href="contact.html" class="btn btn-outline">Contact the founder</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final-cta section bg-gradient-strong">
+    <div class="container cta-inner">
+      <h2>Ready to move from confusion to clarity?</h2>
+      <p>Join our next cohort of 100L students and start strong. Limited seats per cohort.</p>
+      <div class="cta-buttons">
+        <a class="btn btn-accent" href="register.html">Register & Pay</a>
+        <a class="btn btn-outline" href="contact.html">Ask a Question</a>
       </div>
     </div>
   </section>
 
 </main>
+
 
   <!-- Footer (shared, creative) -->
   <footer class="site-footer">
